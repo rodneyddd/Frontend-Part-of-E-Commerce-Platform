@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="cakelayer.css">
+</head>
+<body>
+
+    <div id="taskbar-placeholder"></div>
+    <script>
+    fetch('taskbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('taskbar-placeholder').innerHTML = data;
+        });
+    </script>
+
+    <h1>Cake Builder</h1>
+    <div class="cake-container">
+        <div class="cake-layer" id="bottom-layer"></div>
+        <div class="cake-layer" id="middle-layer"></div>
+        <div class="cake-layer" id="top-layer"></div>
+    </div>
+    <div class="options">
+        <button onclick="selectLayer('chocolate', 'bottom-layer')">Chocolate</button>
+        <button onclick="selectLayer('vanilla', 'bottom-layer')">Vanilla</button>
+        <button onclick="toggleMiddleLayer()">Add Cookie Crunch</button>
+        <button onclick="selectLayer('strawberry', 'top-layer')">Strawberry</button>
+        <button onclick="selectLayer('blueberry', 'top-layer')">Blueberry</button>
+    </div>
+    <script src="cakelayer.js"></script>
+</body>
+</html>

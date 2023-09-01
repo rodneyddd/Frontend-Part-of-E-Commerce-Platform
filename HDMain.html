@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Häagen-Dazs</title>
+
+    <!---custom css link-->
+    <link rel="stylesheet" type="text/css" href="HD.css">
+
+    <!--Boxicons Link-->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!--remixicons link-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--GOOGLE FONTS LINK-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@300;400&family=PT+Serif:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const taskbarContainer = document.getElementById("taskbar-container");
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET", "taskbar.html", true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    taskbarContainer.innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send();
+        });
+    </script>
+
+<script src="HD.js"></script>
+
+</head>
+<body>
+
+    <div id="taskbar-placeholder"></div>
+    <script>
+    fetch('taskbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('taskbar-placeholder').innerHTML = data;
+        });
+    </script>
+
+    <header>
+       <!----<a href="#" class="logo">Haagen-Dazs</a>-->
+
+        <div class="parallax-1">
+
+            <div class="parallax-content">
+                <h1>Welcome to Häagen-Dazs!</h1>
+                <br>
+                <h2>We are located at <a href="https://www.google.com/maps/place/H%C3%A4agen-Dazs+Ice+Cream/@40.7665523,-73.9622838,17z/data=!3m1!4b1!4m6!3m5!1s0x89c259964960f24d:0xc889d2e4c20fd180!8m2!3d40.7665523!4d-73.9597089!16s%2Fg%2F11ss4p51zs?entry=ttu">1306 2nd Avenue.</a></h2>
+                <br>
+                <h3>Navigate through our website to uncover the full spectrum of what we have available!</h3>
+            </div>
+        </div>
+
+        <div class="parallax-2">
+            <div class="cold">
+                Use this Website to order our delicious cakes! Navigate through our flavors
+                to customize your cake.
+                <br>
+                <br>
+                Take a look at our catering services!
+                <br>
+                <br>
+                or come see what we're all about!
+
+            </div>
+            <div class="button-container">
+                <a href="IceCream.html" class="menu-button">Ice Cream Cake Flavors</a>
+                <a href="catering.html" class="menu-button">Catering Services</a>
+                <a href="about.html" class="menu-button">About</a>
+            </div>
+        </div>
+
+        <div class="parallax-2p5">
+            <div class="p2p5-container">
+                <button id="comeenjoy" class="buttonn">Click here to take a look at our options!</button>
+            </div>
+        </div>
+
+        <div class="parallax-3">
+            <div class="para3-content">
+                <h2>Contact Us</h2>
+                <p>Address: 1306 2nd Avenue, Manhattan, New York</p>
+                <p>Email: info@haagendazs.com</p>
+                <p>Phone: +1 (646) 484 5897</p>
+                <p>Opening Hours: Mon-Sun: 11:00 AM - 11:00 PM</p>
+            </div>
+        </div>
+
+        
+
+        
+    </header>
+        
+        
+
+        
+
+    
+
+    
+
+    <div class="icons">
+        <a href="#"><i class="ri-instagram-fill"></i></a>
+        <a href="#"><i class="ri-twitter-fill"></i></a>
+        <a href="#"><i class="ri-facebook-box-fill"></i></a>
+    </div>
+
+    <div class="scroll-down">
+        <a href="#"><i class="ri-arrow-down-s-line"></i></a>
+
+    </div>
+
+    <!---scrollreveal effect-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--custom javascript link-->
+    <script src="#"></script>
+</body>
+</html>

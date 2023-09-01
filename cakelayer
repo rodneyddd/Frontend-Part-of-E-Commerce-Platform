@@ -1,0 +1,45 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .cake-builder {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+    h2 {
+      color: #333;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    label {
+      font-weight: bold;
+    }
+    select {
+      padding: 8px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+    }
+    .cake-layer {
+      width: 100px;
+      height: 15px;
+      background-color: #f5e9db; /* Layer color */
+      margin-bottom: 5px;
+      border-radius: 5px;
+    }
+    #cakePreview {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
