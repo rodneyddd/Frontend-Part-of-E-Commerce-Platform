@@ -52,7 +52,7 @@
     
     display: flex;
     align-items: center;
-    background-image: url("haagen.jpeg"); /* Replace with your image */
+    background-image: url("./assets/haagen.jpeg"); /* Replace with your image */
 }
 
 .image1 {
@@ -63,7 +63,7 @@
     background-attachment: fixed;
     display: flex;
     align-items: center;
-    background-image: url("insidestore.jpeg"); /* Replace with your image */
+    background-image: url("./assets/insidestore.jpeg"); /* Replace with your image */
 }
 
 .image2 {
@@ -74,7 +74,7 @@
     background-attachment: fixed;
     display: flex;
     align-items: center;
-    background-image: url("insidestore3.jpg"); /* Replace with your image */
+    background-image: url("./assets/insidestore3.jpg"); /* Replace with your image */
 }
 
 

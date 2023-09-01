@@ -50,7 +50,7 @@
     justify-content: center; /* Horizontally center content */
     align-items: center; /* Vertically center content */
 
-    background-image: url("ic3.jpeg"); /* Set the background image */
+    background-image: url("./assets/ic3.jpeg"); /* Set the background image */
     background-attachment: fixed; /* Fixed background */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Don't repeat the background image */
@@ -74,7 +74,7 @@
 
 
 .parallax-2 {
-    background-image: url("haagen.jpeg"); /* Set the background image */
+    background-image: url("./assets/haagen.jpeg"); /* Set the background image */
     background-attachment: fixed; /* Fixed background */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Don't repeat the background image */
@@ -138,7 +138,7 @@
 
 .parallax-2p5 {
     
-    background-image: url("IMG-0117.jpg");
+    background-image: url("./assets/IMG-0117.jpg");
     min-height: 200vh; /* Set a minimum height of 100% of the viewport height */
     /*background-attachment: fixed;*/
     background-position: center; /* Center the background image */
@@ -179,7 +179,7 @@
 
 .parallax-3 {
     /* The image used for the first parallax section */
-    background-image: url("black.jpeg");
+    background-image: url("./assets/black.jpeg");
     min-height: 25vh; /* Set a minimum height of 100% of the viewport height */
     background-attachment: fixed;
     background-position: center; /* Center the background image */
